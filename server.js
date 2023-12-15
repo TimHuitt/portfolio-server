@@ -5,7 +5,8 @@ const morgan = require("morgan")
 require("dotenv").config();
 require("./config/db.connection")
 
-const { PORT } = process.env;
+// const { PORT } = process.env;
+const PORT = process.env.PORT || 3000;
 const indexRouter = require('./routes/index.js')
 const projectsRouter = require('./routes/projects.js')
 
